@@ -1,0 +1,1068 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* RESET */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color: #E39800;
+    --second-color: #8E8E8E;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h6 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.color-inline {
+    color: var(--main-color);
+}
+
+.main-button {
+    height: 60px;
+    width: 180px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    display: flex;
+    transition: 300ms;
+}
+
+.main-button:hover {
+    background-color: var(--second-color);
+}
+
+.main-button a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.second-button {
+    height: 60px;
+    width: 180px;
+    border-radius: 4px;
+    background-color: black;
+    display: flex;
+    transition: 300ms;
+}
+
+.second-button:hover {
+    background-color: var(--second-color);
+}
+
+.second-button a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+header {
+    padding: 10px 0;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    border-bottom: 1px solid #aaaaaa54;
+    width: 100%;
+}
+
+.mainmenubtn {
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.mainmenubtn i {
+    font-size: 16px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown p {
+    transition: 300ms;
+}
+
+.dropdown:hover p {
+    color: var(--main-color);
+}
+
+.dropdown-child {
+    display: none;
+    position: absolute;
+    left: -40%;
+    top: 100%;
+    background-color: #383838;
+    border-radius: 4px;
+    width: max-content;
+    text-align: center;
+}
+
+.dropdown-child a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child,
+.dropdown-child:hover {
+    display: block;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 60px;
+}
+
+header .logo img {
+    height: 100%;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px 20px;
+}
+
+header ul a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: 300ms;
+}
+
+header ul a:hover {
+    color: var(--main-color);
+}
+
+header ul .active {
+    color: var(--main-color);
+}
+
+
+
+
+
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .left {
+    width: 100%;
+}
+
+.banner .left p {
+    color: var(--second-color);
+    font-size: 18px;
+    padding: 10px 0 40px 0;
+}
+
+.banner .right {
+    width: 70%;
+}
+
+.banner .right img {
+    width: 100%;
+}
+
+
+
+
+
+
+.presentation {
+    height: 100vh;
+    display: flex;
+}
+
+.presentation .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation .left {
+    width: 100%;
+    padding-left: 80px;
+}
+
+.presentation .left h2 {
+    padding-bottom: 20px;
+}
+
+.presentation .left p {
+    color: var(--second-color);
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.presentation .right {
+    width: 60%;
+}
+
+.presentation .right img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+
+
+
+.menu,
+.cours,
+.services {
+    background-color: var(--main-color);
+    padding: 30px 0;
+}
+
+.menu .container,
+.cours .container,
+.services .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .left h3,
+.cours .left h3,
+.services .left h3 {
+    line-height: 1.5;
+}
+
+.menu .left p,
+.cours .left p,
+.services .left p  {
+    font-size: 18px;
+}
+
+
+
+
+
+
+.galerie {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galerie p {
+    padding: 10px 0 40px 0;
+    font-size: 18px;
+    color: var(--second-color);
+}
+
+.galerie .container-photo {
+    display: flex;
+}
+
+.galerie .container-photo img {
+    width: 20%;
+}
+
+.nav-btn {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-btn span {
+    width: 41px;
+    height: 7px;
+    background-color: var(--main-color);
+    border-radius: 100rem;
+    opacity: 0.8;
+}
+
+.nav-btn span:nth-child(1) {
+    width: 71px;
+    opacity: 1;
+}
+
+.nav-btn span:nth-child(2) {
+    margin: 0 8px;
+}
+
+
+
+
+.actualites {
+    padding: 100px 0;
+}
+
+.actualites .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actualites .under-h2 {
+    padding: 10px 0 40px 0;
+    color: var(--second-color);
+}
+
+.actualites .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actualites .card {
+    width: 32%;
+    background-color: #c7c7c7;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.actualites .card img {
+    width: 100%;
+    height: 260px;
+}
+
+.actualites .card .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.actualites .card .date {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.actualites .card h4 {
+    color: black;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.actualites .card .descripton {
+    color: black;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 20px;
+}
+
+.actualites .main-button {
+    margin-top: 40px;
+}
+
+.actualites .main-button p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+.services .buttons {
+    display: flex;
+}
+
+.services .buttons .second-button:nth-child(1)  {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.avis-client {
+    padding: 100px 0 100px 0;
+}
+
+.avis-client .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avis-client h2 {
+    font-size: 40px;
+    padding-bottom: 4px;
+}
+
+.avis-client img {
+    width: 380px;
+}
+
+.avis-client .review {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.avis-client .review .content {
+    font-size: 40px;
+}
+
+.avis-client .review img {
+    width: 100px;
+    padding: 10px 0 30px 0;
+}
+
+.avis-client .review .autor {
+    font-size: 22px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+
+
+footer {
+    padding: 20px 0;
+}
+
+footer .short-infos {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+}
+
+footer .short-infos a {
+    display: flex;
+    align-items: center;
+    color: white;
+    line-height: 1.2;
+}
+
+footer .short-infos i {
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+footer .short-infos .info {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer .infos {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .infos .enterprise {
+    width: 200px;
+    text-align: center;
+}
+
+footer .infos img {
+    height: 60px;
+}
+
+footer .enterprise p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .social-media a {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 300ms;
+}
+
+footer .social-media a:hover {
+    background-color: transparent;
+}
+
+footer .social-media i {
+    font-size: 26px;
+}
+
+footer .social-media a:nth-child(2) i {
+    font-size: 34px;
+}
+
+footer .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .nav-links h6 {
+    text-align: center;
+}
+
+footer .nav-links li {
+    padding: 1px 0;
+}
+
+footer .nav-links a {
+    color: white;
+    font-size: 16px;
+    transition: 300ms;
+}
+
+footer .nav-links a:hover {
+    color: var(--main-color);
+}
+
+footer .me-contacter  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .me-contacter p {
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    max-width: 230px;
+    padding-bottom: 15px;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+footer .copyright p {
+    font-size: 16px;
+    white-space: nowrap
+}
+
+footer .copyright::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+}
+
+footer .copyright::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+
+/* page menu */
+
+.menus {
+    padding: 120px 0;
+}
+
+.menus .container {
+    text-align: center;
+}
+
+.menus .container .under-h1 {
+    padding: 10px 0 100px 0;
+    color: var(--second-color);
+}
+
+.menus .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menus .content .intro {
+    padding-bottom: 40px;
+}
+
+.menus .content .intro h2 {
+        line-height: 1;
+        font-size: 48px;
+}
+
+.menus .content .intro p {
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.menus .content h3 {
+    padding-bottom: 10px;
+}
+
+.menus .content h3 span {
+    font-size: 30px;
+    border-bottom: var(--main-color) 3px solid;
+}
+
+.menus .content li {
+    padding: 20px 0;
+}
+
+.menus .content .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menus .content .left,
+.menus .content .right {
+    width: 48%;
+}
+
+.menus .content img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.menus .first-menu {
+    padding-bottom: 100px;
+}
+
+.menus .second-menu {
+    flex-direction: row-reverse;
+}
+
+
+
+/* page cours de cuisine */
+
+.cour {
+    padding: 180px 0 120px 0;
+}
+
+.cour .container {
+    text-align: center;
+}
+
+.cour .container .presentation-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    height: 700px;
+    padding-bottom: 180px;
+}
+
+.cour .presentation-container .content {
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cour .presentation-container img {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.cour .container .under-h1 {
+    padding-top: 30px;
+    color: var(--second-color);
+    font-size: 18px;
+}
+
+.cour .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cour .card {
+    width: 32%;
+    background-color: #c7c7c7;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.cour .card img {
+    width: 100%;
+    height: 260px;
+}
+
+.cour .card .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cour .card h4 {
+    color: black;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.cour .price {
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+}
+
+.cour .card .descripton {
+    color: black;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 20px;
+}
+
+
+
+.realisation {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.realisation .container .under-h1 {
+    padding: 10px 0 80px 0;
+    color: var(--second-color);
+}
+
+.realisation .images-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.realisation .images-container img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+
+/* page actualites */
+
+
+.news {
+    padding: 120px 0;
+}
+
+.news .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news .under-h1 {
+    padding: 10px 0 40px 0;
+    color: var(--second-color);
+}
+
+.news .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 20px;
+}
+
+.news .card {
+    width: 100%;
+    background-color: #c7c7c7;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.news .card img {
+    width: 100%;
+    height: 260px;
+}
+
+.news .card .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news .card .date {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.news .card h4 {
+    color: black;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.news .card .descripton {
+    color: black;
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 20px;
+}
+
+
+
+.contact {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.contact .container .under-h1 {
+    font-size: 22px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0 60px 0;
+    line-height: 1;
+}
+
+.contact .container form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact .container input,
+.contact .container textarea {
+    height: 50px;
+    margin: 4px 0;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border: none;
+}
+
+.contact .container textarea {
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+    text-transform: uppercase;
+}
+
+.contact .container button {
+    height: 60px;
+    border-radius: 4px;
+    margin: 4px 0;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.contact .container button:hover {
+    background-color: var(--second-color);
+}
+
+
+
+
+
+.traiteur {
+    padding: 180px 0 120px 0;
+}
+
+.traiteur .container .presentation-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    height: 700px;
+    padding-bottom: 180px;
+}
+
+.traiteur .presentation-container .content {
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.traiteur .presentation-container img {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.traiteur .container .under-h1 {
+    padding-top: 30px;
+    color: var(--second-color);
+    font-size: 18px;
+}
+
+.traiteur .card {
+    background-color: var(--main-color);
+    border-radius: 4px;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.traiteur .card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.traiteur .card img {
+    height: 60px;
+}
+
+.traiteur .card h4 {
+    color: black;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.traiteur .card p {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+}
+
+
+.animation-mixologie {
+    padding: 180px 0 120px 0;
+}
+
+.animation-mixologie .container .presentation-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    height: 700px;
+    padding-bottom: 100px;
+}
+
+.animation-mixologie .container .presentation-container:nth-child(1) {
+    margin-bottom: 100px;
+}
+
+.animation-mixologie .container .presentation-container:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.animation-mixologie .presentation-container .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.animation-mixologie .presentation-container:nth-child(2) .content {
+    padding-right: 0px;
+    padding-left: 100px;
+}
+
+.animation-mixologie .presentation-container .img {
+    width: 50%;
+}
+
+.animation-mixologie .presentation-container:nth-child(1) .img {
+    display: flex;
+    justify-content: end;
+}
+
+.animation-mixologie .presentation-container img {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.animation-mixologie .container .under-h1 {
+    padding-top: 30px;
+    color: var(--second-color);
+    font-size: 18px;
+}
