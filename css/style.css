@@ -1024,11 +1024,11 @@ textarea::placeholder {
     justify-content: space-between;
     text-align: left;
     height: 700px;
-    padding-bottom: 100px;
+    padding-bottom: 180px;
 }
 
 .animation-mixologie .container .presentation-container:nth-child(1) {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .animation-mixologie .container .presentation-container:nth-child(2) {
