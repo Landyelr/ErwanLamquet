@@ -11,7 +11,7 @@
 }
 
 :root {
-    --main-color: #E39800;
+    --main-color: #c3680b;
     --second-color: #8E8E8E;
     scroll-behavior: smooth;
 }
@@ -47,7 +47,7 @@ h6 {
 }
 
 .color-inline {
-    color: var(--main-color);
+    
 }
 
 .main-button {
@@ -57,6 +57,10 @@ h6 {
     background-color: var(--main-color);
     display: flex;
     transition: 300ms;
+}
+
+.main-button-black {
+    background-color: black;
 }
 
 .main-button:hover {
@@ -83,19 +87,23 @@ h6 {
     transition: 300ms;
 }
 
-.second-button:hover {
-    background-color: var(--second-color);
-}
-
 .second-button a {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    border: 2px solid white;
+    border-radius: 4px;
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
+    transition: 300ms;
+}
+
+.second-button a:hover {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
 }
 
 header {
@@ -123,12 +131,16 @@ header {
     position: relative;
 }
 
+.dropdown p.active {
+    position: relative;
+}
+
 .dropdown p {
     transition: 300ms;
 }
 
-.dropdown:hover p {
-    color: var(--main-color);
+.dropdown span:hover {
+    border-bottom: 2px solid white;
 }
 
 .dropdown-child {
@@ -185,12 +197,13 @@ header ul a {
     transition: 300ms;
 }
 
-header ul a:hover {
-    color: var(--main-color);
+header ul a:hover span {
+    border-bottom: 2px solid white;
+    width: 100%;
 }
 
-header ul .active {
-    color: var(--main-color);
+header ul .active span {
+    border-bottom: 2px solid white;
 }
 
 
@@ -201,6 +214,10 @@ header ul .active {
     height: 100vh;
     display: flex;
     align-items: center;
+}
+
+.banner h1 {
+    padding-bottom: 20px;
 }
 
 .banner .container {
@@ -515,7 +532,8 @@ footer .short-infos .info {
 footer .infos {
     padding: 40px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+        border-top: solid 2px white;
 }
 
 footer .infos .enterprise {
